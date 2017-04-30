@@ -30,7 +30,7 @@
             .substr(1)
             .split("&")
             .some(function(item) {
-                return param = item.split("&callback=", 1)[1];
+                return param = item.split("=", 1)[1];
             });
         return param;
     }
